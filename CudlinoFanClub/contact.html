@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Cudlino Fan Club Contact</title>
+    <link href="stylesheets/cfc.css" rel="stylesheet">
+    <link href="images/favicon.gif" rel="icon" type="image/ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Cudlino Fan Club</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <main>
+        <section id="contact">
+          <header>
+            <h2>Contact</h2>
+          </header>
+          <p>
+            Get in Contact with us here for all questions and concerns.
+            All fields with an asterisk (*) are required.
+          </p>
+          <form method="post" action="https://itsd.cvtc.edu/web1/contact.php">
+            <label for="name">*Name</label>
+            <input required type="text" name="name" id="name" placeholder="Your Name">
+            
+            <label for="email">*Email</label>
+            <input required type="email" name="email" id="email" placeholder="Your Email">
+            
+            <label for="phone_number">*Phone number</label>
+            <input required type="tel" name="phone_number" id="phone_number" placeholder="715-555-5555">
+            
+            <label for="message">Message</label>
+            <textarea required id="message" name="message"></textarea>
+            
+            <input type="submit" value="Send Message">
+          </form>
+        </section>
+      </main>
+      <footer>
+        <small>Copyright &copy; 2020 Bruce Brown<br>
+        <a href="mailto:info@cudlinomusic.com">info@cudlinomusic</a></small>
+      </footer>
+    </div>
+  </body>
+</html>

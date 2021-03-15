@@ -1,0 +1,229 @@
+body { font-family: Verdana, Geneva, sans-serif; }
+
+h1, h2, h3, h4 { margin-top: 0; }
+
+header > h1 { text-indent: -9999px; } 
+
+nav a {
+  background-color: #06215F; 
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 10px auto;
+  text-align: center;
+  width: 90%;
+}
+
+nav a:link { color: #FFF; } 
+
+nav a:visited { color: #8AC4F5; } 
+
+nav a:hover, nav a:focus {
+  background-color: #CAE4FA;
+  border-radius: 5px; 
+  color: #333; 
+  font-weight: bold; 
+} 
+
+#announcement { font-weight: bold; padding-top: 5px; } 
+
+#wrapper {
+  background-color: #5DB5FF;
+  background-image: linear-gradient(to bottom, #5DB5FF, #0480E7);
+}
+
+#wrapper > header {
+  background-color: #0480E7;
+  background-image: url( ../images/small_header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-bottom: 1px solid #300;
+}
+
+main {
+  background-color: #DEF0FF;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 1%;
+  width: 88%;
+}
+
+footer {
+  color: #FFF; 
+  text-align: center; 
+}
+
+footer a {
+  color: #FFF;
+  padding: 0 5px; 
+  text-decoration: none;
+}
+
+footer a:link { color: #FFF; } 
+
+footer a:visited { color: #000; } 
+
+footer a:hover, footer a:focus {
+  background-color: #CAE4FA; 
+  border-radius: 2px; 
+  color: #333; 
+  font-weight: bold; 
+} 
+
+td, th { padding: 2px; } 
+tr:nth-child(even) { background-color:#8AC4F5; }
+
+label {
+  display: block; 
+  float: left; 
+  font-weight: bold;
+  padding-right: 1em; 
+  text-align: left; 
+  width: 100px; 
+}
+
+input, textarea { display: block; margin-bottom: 20px; }
+
+input[type=submit] { margin-left: 115px; }
+
+
+#gallery {
+  display: flex; 
+  flex: auto; 
+  flex-flow: row wrap; 
+}
+
+#gallery img {
+  margin: 1em; 
+  box-shadow: 5px 5px #999; 
+}
+
+#links a { text-decoration: none; }
+
+#links h2 { margin-bottom: 0; } 
+
+#links h3 { margin: 10px auto; }
+
+#links p { margin-bottom: 15px; margin-top: 0; }
+  
+#links ul {
+  list-style: none;
+  margin: 5px auto; 
+  padding: 0; 
+}
+
+#links li { padding: 5px 0; }
+
+#links a:link { color: #0643E9; } 
+
+#links a:visited { color: #6300A1; } 
+
+#links a:hover, #links a:focus {
+  background-color: #06215F; 
+  border-radius: 2px; 
+  color: #FFF; 
+  font-weight: bold;
+}
+
+/* smaller than tablets */
+@media only screen and (max-width: 767px) {
+  h1, h2, h3, h4 { text-align: center; }
+    
+  #links p, #links ul { text-align: center; } 
+    
+  #gallery { justify-content: center; }
+  
+}
+
+/* tablets and desktops */
+@media only screen and (min-width: 768px) {
+    body {
+    background-color: #071561;
+    background-image: linear-gradient(to bottom, #333, #071561);
+    background-repeat: no-repeat; 
+  }
+  
+  main ul {
+    overflow: hidden;
+  }
+  
+  td, th { padding: 5px; } 
+}
+
+/* tablet display */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+  #wrapper > header { background-image: url(../images/medium_header.png); }
+  
+  nav li {
+    display: inline-block;
+    width: 20%;
+  }
+  
+  nav {
+    text-align: center;
+  }
+}
+
+/* desktop display */
+@media only screen and (min-width: 960px) {
+  
+  body {
+    background-color: #071561;
+    background-image:linear-gradient(to bottom, #333, #071561);
+    background-repeat: no-repeat;
+  }
+  
+  #wrapper {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #555;
+    margin: 0 auto; 
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  #wrapper > header { 
+    background-image: url(../images/large_header.png); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: auto; 
+  }
+  
+  nav {
+    float: left;
+    width: 15%;
+  }
+  
+  main { 
+    margin-left: 15%;
+    border-radius: 0;
+    width: 83%;
+  }
+}
+
+/* large desktop display */
+@media only screen and (min-width: 1500px) {
+  
+  main {
+    background-image: url(../images/cudlino_bg.png); 
+    background-repeat: no-repeat; 
+    background-position: right bottom; 
+    background-size: auto; 
+  }
+  
+  #contact p { margin: 10px auto; } 
+  
+  #wrapper > header { background-size: 100% auto; }
+}
